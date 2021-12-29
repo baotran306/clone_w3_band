@@ -21,6 +21,7 @@ html {
     right: 0px;
     height: 46px;
     background-color: #000;
+    z-index: 1;
 }
 
 #nav {
@@ -103,8 +104,41 @@ html {
 }
 
 #slider {
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    /* height = 1 / 2 weight */
+    background: url('/assets/img/slider/chicago_tour.jpg') top center / cover no-repeat;
 }
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* option 1 to align center */
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+    /* option 2 */
+    width: 100%;
+
+    /* option 3 */
+    /* left: 0;
+    right: 0; */
+
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500px;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 
 #content {
 
