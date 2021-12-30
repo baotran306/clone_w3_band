@@ -242,6 +242,63 @@ html {
     /* just use margin is nagative value when have float, if not it not affect */
 }
 
+.place-list {
+    margin: 32px -8px 48px;
+}
+
+.place-list .place-item {
+    float: left;
+    width: 33.3333333%;
+    padding: 0 8px;
+    
+}
+
+.place-item .place-image {
+    width: 100%;
+    display: block;
+}
+
+.place-item .place-image:hover {
+    opacity: 0.6;
+}
+
+.place-item .place-content {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-item .place-heading {
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-item .place-time {
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-item .place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-item .place-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.place-item .place-btn:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+
 #footer {
 
 }
