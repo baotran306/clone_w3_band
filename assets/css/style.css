@@ -326,6 +326,7 @@ html {
     max-width: calc(100% - 32px);
     /* when we reponsity  width < 900 */
     position: relative;
+    animation: modalFadeIn ease .5s;
 }
 
 .modal-header {
@@ -402,4 +403,16 @@ html {
 
 .modal-footer a {
     color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
