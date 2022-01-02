@@ -1,3 +1,4 @@
+/* Common */
 /* Reset CSS */
 *{
     padding: 0;
@@ -10,13 +11,38 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.text-white{
+.text-white {
     color: white !important;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 .clear {
     clear: both;
 }
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.333333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+/* main */
 
 #main {
 
@@ -184,13 +210,12 @@ html {
 
 #content .member-list {
     margin-top: 47px;
-    text-align: center;
 }
 
-#content .member-item {
+/* #content .member-item {
     float: left;
-    width: calc(100% / 3);
-}
+    width: calc(100% / 3); 
+} */
 
 #content .member-name {
     font-size: 15px;
@@ -243,48 +268,50 @@ html {
 }
 
 .place-list {
-    margin: 32px -8px 48px;
+    /* margin: 32px -8px 48px; */
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
-.place-list .place-item {
+/* .place-list .place-item {
     float: left;
     width: 33.3333333%;
     padding: 0 8px;
     
-}
+} */
 
-.place-item .place-image {
+.place-image {
     width: 100%;
     display: block;
 }
 
-.place-item .place-image:hover {
+.place-image:hover {
     opacity: 0.6;
 }
 
-.place-item .place-content {
+.place-content {
     background-color: #fff;
     padding: 16px;
     font-size: 15px;
 }
 
-.place-item .place-heading {
+.place-heading {
     padding-top: 15px;
     font-size: 15px;
     font-weight: 600;
 }
 
-.place-item .place-time {
+.place-time {
     margin-top: 15px;
     opacity: 0.6;
 }
 
-.place-item .place-desc {
+.place-desc {
     margin-top: 15px;
     line-height: 1.4;
 }
 
-.place-item .place-btn {
+.place-btn {
     color: #fff;
     background-color: #000;
     text-decoration: none;
@@ -293,7 +320,7 @@ html {
     margin-top: 16px;
 }
 
-.place-item .place-btn:hover {
+.place-btn:hover {
     color: black;
     background-color: #ccc;
 }
