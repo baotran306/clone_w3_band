@@ -9,6 +9,7 @@
 /* */
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .text-white {
@@ -17,6 +18,26 @@ html {
 
 .text-center {
     text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 16px;
+    border: none;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 .clear {
@@ -62,9 +83,6 @@ html {
 
 /* main */
 
-#main {
-
-}
 
 /* header start */
 
@@ -197,15 +215,9 @@ html {
 
 /* content */
 
-
-#content {
-
-}
-
-
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -294,7 +306,7 @@ html {
 .place-list {
     /* margin: 32px -8px 48px; */
     margin-top: 32px;
-    margin-bottom: 48px;
+    
 }
 
 /* .place-list .place-item {
@@ -335,20 +347,6 @@ html {
     line-height: 1.4;
 }
 
-.place-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: inline-block;
-    margin-top: 16px;
-}
-
-.place-btn:hover {
-    color: black;
-    background-color: #ccc;
-}
-
 .contact-content {
     margin-top: 48px;
 }
@@ -373,19 +371,51 @@ html {
     width: 100%;
 }
 
-.contact-form .form-submit-btn {
+/* .contact-form .form-submit-btn {
     background-color: #000;
     border: 1px solid #000;
     color: #fff;
     padding: 10px 16px;
     float: right;
+} */
+
+/* map */
+.map-section {
+    width: 100%;
 }
 
 /* footer */
 
 
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+    
+}
 
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color:rgb(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a:hover,
+#footer .social-list a:hover{
+    text-decoration: none;
+    color:rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#footer .copy-right {
+    margin-top: 15px;
+    color:rgb(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a{
+    color:rgb(0, 0, 0, 0.6);
 }
 
 /* modal */
@@ -428,11 +458,6 @@ html {
 
 .modal-margin-icon {
     margin-right: 16px;
-}
-
-.modal-cover {
-    
-    /* padding: 12px; */
 }
 
 .modal-close {
