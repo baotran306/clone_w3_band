@@ -23,6 +23,14 @@ html {
     clear: both;
 }
 
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -34,6 +42,12 @@ html {
     padding-right: 8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col-third {
     width: 33.333333%;
 }
@@ -42,11 +56,17 @@ html {
     width: 50%;
 }
 
+.col-full {
+    width: 100%;
+}
+
 /* main */
 
 #main {
 
 }
+
+/* header start */
 
 #header {
     position: fixed;
@@ -137,6 +157,8 @@ html {
     background-color: #f44336;
 }
 
+/* slider */
+
 #slider {
     position: relative;
     margin-top: 46px;
@@ -172,6 +194,8 @@ html {
     font-size: 15px;
     margin-top: 25px;
 }
+
+/* content */
 
 
 #content {
@@ -325,10 +349,46 @@ html {
     background-color: #ccc;
 }
 
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: #ccc 1px solid;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 10px 16px;
+    float: right;
+}
+
+/* footer */
+
 
 #footer {
 
 }
+
+/* modal */
 
 .modal {
     position: fixed;
