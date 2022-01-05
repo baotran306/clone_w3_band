@@ -7,6 +7,8 @@
     <title>W3 Band Clone</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon/icon.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -34,6 +36,10 @@
             <!-- begin search icon -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- end search icon -->
         </div>
@@ -219,30 +225,8 @@
 </body>
 </html>
 
-<script>
-    const buyBtns = document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.js-modal')
-    const modalContainer = document.querySelector('.js-modal-container')
-    const modalClose = document.querySelector('.js-modal-close')
+<script src="assets/js/js-modal.js">
+</script>
 
-    function showBuyTickets() {
-        modal.classList.add('open')
-    }
-
-    function hideBuyTickets() {
-        modal.classList.remove('open')
-    }
-
-    for(const buyBtn of buyBtns) {
-        //
-        buyBtn.addEventListener('click', showBuyTickets)
-    }
-
-    modalClose.addEventListener('click', hideBuyTickets)
-
-    modal.addEventListener('click', hideBuyTickets)
-
-    modalContainer.addEventListener('click', function(event) {
-        event.stopPropagation()
-    })
+<script src="assets/js/js-menu-bar.js">
 </script>
