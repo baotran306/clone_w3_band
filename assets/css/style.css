@@ -166,6 +166,13 @@ html {
     
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .menu-icon, 
 #header .search-icon {
     font-size: 20px;

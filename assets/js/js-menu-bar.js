@@ -23,5 +23,6 @@ for(var i=0; i<menuItems.length; i++){
     var menuItem = menuItems[i]
     menuItem.onclick = function() {
         header.style.height = null
+        header.style.backgroundColor = null
     }
 }
