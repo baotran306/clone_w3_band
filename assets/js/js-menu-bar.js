@@ -21,8 +21,14 @@ mobileMenuBtn.onclick = function() {
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
 for(var i=0; i<menuItems.length; i++){
     var menuItem = menuItems[i]
-    menuItem.onclick = function() {
-        header.style.height = null
-        header.style.backgroundColor = null
+    
+    menuItem.onclick = function(event) {
+        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+        if(!isParentMenu){
+            header.style.height = null
+        }
+        else {
+            event.preventDefault();
+        }
     }
 }
