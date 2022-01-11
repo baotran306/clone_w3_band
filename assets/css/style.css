@@ -32,6 +32,7 @@ html {
     display: inline-block;
     margin-top: 16px;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -50,6 +51,10 @@ html {
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 .row {
@@ -146,7 +151,7 @@ html {
 }
 
 #nav li:hover .subnav {
-    display: inline-block;
+    display: block;
 }
 
 #nav .subnav a{ 
@@ -267,7 +272,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 47px;
+    margin-top: 32px;
 }
 
 /* #content .member-item {
@@ -327,7 +332,7 @@ html {
 
 .place-list {
     /* margin: 32px -8px 48px; */
-    margin-top: 32px;
+    margin-top: 16px;
     
 }
 

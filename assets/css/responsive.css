@@ -11,6 +11,15 @@
 /* Mobile */
 @media (max-width: 729px) {
 
+    .s-full-width,
+    .s-col-full  {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
     #header {
         overflow: hidden;
     }
@@ -48,6 +57,14 @@
     #nav .subnav a{
         color: #fff;
         padding: 5px 40px;
+    }   
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #content .contact-form {
+        margin-top: 16px;
     }
 
     
